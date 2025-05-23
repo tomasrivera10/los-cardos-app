@@ -1,4 +1,3 @@
-// api/index.js
 import 'dotenv/config';
 import cors from 'cors';
 import express from 'express';
@@ -48,4 +47,3 @@ app.get('/obtener-cliente/:dni', async (req, res) => {
 });
 
 export const handler = serverless(app);
-export default app;
