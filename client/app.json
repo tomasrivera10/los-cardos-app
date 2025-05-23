@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Escaner QR Los Cardos",
+    "slug": "los-cardos-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icono.png",
+    "scheme": "loscardosapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/los_cardos_rugby_club.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.ferminvicente.loscardosapp"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/los_cardos_rugby_club.jpg"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#006722"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "bcd6d3b3-bd58-4613-b525-4a18ae6e2854"
+      }
+    },
+    "owner": "ferminvicente"
+  }
+}
