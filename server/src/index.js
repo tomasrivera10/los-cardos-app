@@ -46,4 +46,12 @@ app.get('/obtener-cliente/:dni', async (req, res) => {
   }
 });
 
-export const handler = serverless(app);
+// Add a global error handler to catch unhandled errors
+app.use((error, req, res, next) => {
+  console.error(error);
+  res.status(500).json({ success: false, error: error.message });
+});
+
+// Export the handler as the default export
+const handler = serverless(app);
+export default handler;
