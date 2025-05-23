@@ -12,6 +12,7 @@
       "dest": "src/index.js"
     }
   ],
+
   "headers": [
     {
       "source": "/(.*)",
